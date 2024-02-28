@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Name from "../component/Name";
 import Keyword from "../component/Keyword";
+import Photo from "../data/Photo.jpg"
 
 
 function Home() {
@@ -9,12 +10,11 @@ function Home() {
     <><div >
       <Name/>
       <div className="flex flex-col md:flex-row justify-center  w-full p-2 md:space-x-4">
-        <div className="w-full md:w-[50%]">
+        <div className="w-full md:w-[50%] flex justify-center items-center">
         
           <img
-            className="p-4"
-            src="https://imgs.search.brave.com/fXd4lPQ-VGV-38zBBz8Qwp-6YXaRcPDoK2GEZaU599g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aXN0b2NrcGhvdG8u/Y29tL3Jlc291cmNl/cy9pbWFnZXMvSG9t/ZVBhZ2UvRm91clBh/Y2svQzItUGhvdG9z/LWlTdG9jay0xMzU2/MTk3Njk1LmpwZw"
-          />
+            className="p-2 md:w-[70%] h-[400px] rounded-full"
+            src={Photo}  />
         
         </div>
         <div className=" md:w-[50%] flex-col p-2">
@@ -22,7 +22,7 @@ function Home() {
         <h1 className="text-[20px] text-blue-700 font-semibold">About Me</h1>
        
          
-          <p className="text-[12px] text-gray-800 mt-2">
+          <p className="text-[15px] text-gray-600 mt-2 font-serif">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
