@@ -15,7 +15,7 @@ const Header = () => {
   const navItems = [
     { id: 1, text: <Link to="/">Home</Link> },
     { id: 2, text: <Link to="/project">Projects</Link> },
-    { id: 3, text: <Link to="/resume">About</Link> },
+    { id: 3, text: <Link to="/resume">Resume</Link> },
     
   ];
 
@@ -56,6 +56,7 @@ const Header = () => {
           <li
             key={item.id}
             className="px-4 border-b mb-4  hover:bg-green-300 duration-200 hover:text-black cursor-pointer border-gray-600"
+            onClick={handleNav}
           >
             {item.text}
           </li>
